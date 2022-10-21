@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Survery form</title>
+</head>
+
+<body>
+    <div id="form-container">
+        <form action="" id="survey-form" class="forms">
+            <!--  -->
+            <div class="par">
+                <h1 id="title">
+                    Sports Festival
+                </h1>
+                <br>
+                <p id="description">
+                    Participate and showcase Your talent
+                </p>
+            </div>
+            <div class="information-container">
+
+                <label for="name" id="name-label">Name</label><br>
+
+                <input type="text" id="name" placeholder="Enter Name" required>
+
+                <br>
+                <label for="email" id="email-label">Email</label>
+                <br>
+                <input type="email" placeholder="Enter Email" id="email" required>
+
+                <br>
+                <label for="number">Age</label>
+                <br>
+                <input type="number" id="number" placeholder="Enter number" min="10" max="80">
+                <br>
+            </div>
+
+            <label for="choose"></label>
+            <div class="select-container">
+                <h1>Which Sports would you like to try?</h1>
+                <br>
+                <select name="sports" id="dropdown">
+                    <label for="choose">Which Sports would you like to try?</label>
+                    <option value="basketball">BasketBall</option>
+                    <option value="volleyball">Volleyball</option>
+                    <option value="chess">Chess</option>
+                    <option value="golf">Golf</option>
+                    <option value="tennis">Tennis</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+
+            <div class="radio-container">
+                <h1>Would you like to invite other people? </h1><br>
+                <div>
+                    <input type="radio" id="definitely" name="rad" value="definitely">
+                    <label for="definitely">Definitely</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="notSure" value="Not sure" name="rad">
+                    <label for="notSure">Not sure</label>
+                    <br>
+                </div>
+
+                <div>
+                    <input type="radio" id="maybe" name="rad" value="Maybe">
+                    <label for="maybe">Maybe</label>
+                </div>
+
+            </div>
+
+            <div class="suggestions">
+                <h1>Any other things you are interested on?</h1>
+                <br>
+
+                <select name="select" id="">
+                    <option value="cheerleader">Cheerleader</option>
+                    <option value="organizer">Organizer</option>
+                    <option value="others">others</option>
+                </select>
+            </div>
+
+            <div class="improve">
+                <h1>What do you think we can do to improve? </h1>
+                <br>
+                <label for="fun">
+                    <input type="checkbox" name="" id="fun" value="fun"> Fun Challenges
+                </label>
+                <br>
+                <label for="increase">
+                    <input type="checkbox" name="" id="increase" value="increase"> Increase winners price
+                </label>
+                <br>
+                <label for="sports">
+                    <input type="checkbox" name="" id="sports" value="sports"> Add more Sports
+                </label>
+
+                <br>
+                <label for="available">
+                    <input type="checkbox" name="" id="available" value="available"> Should be available for all age
+                    group
+                </label>
+                <br>
+                <label for="others">
+                    <input type="checkbox" value="others" name="" id="others"> Others
+                </label>
+                <br>
+            </div>
+
+            <h1 class="try-title">Any Suggestions? </h1>
+            <div class="suggest-toImprove">
+                <textarea name="" id="" cols="120" rows="10" placeholder="....">
+
+                </textarea>
+            </div>
+            <div class="btn-container">
+                <button type="submit" class="btn-btn" id="submit">
+                    Submit
+                </button>
+            </div>
+
+
+        </form>
+    </div>
+</body>
+
+</html>
